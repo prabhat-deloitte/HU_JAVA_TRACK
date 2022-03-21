@@ -1,10 +1,13 @@
 public class Login {
 
-    void check_user(String username){
+    String check_user(String username) {
         Csv k = new Csv();
         int n = k.Csv_List().size();
-        System.out.println(k.Csv_List());
-
+        for (int i=0; i<n;i++) {
+            if (username.equals(k.Csv_List().get(i).get(0))) {
+                return "User_found ";
+            }
+        }
+        return "User_not _found";
     }
 }
-
