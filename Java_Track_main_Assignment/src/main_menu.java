@@ -17,6 +17,16 @@ public class main_menu {
           else if( choice == 2){
               List_user_data list_user_data = new List_user_data();
               list_user_data.list_user();}
+          else if(choice == 3){
+              Update_user update_user = new Update_user();
+              Scanner s1 = new Scanner(System.in);
+              String user_id = s1.next();
+              String change = s1.next();
+              int coloumn = s1.nextInt();
+
+              update_user.update(user_id, change, coloumn);
+
+          }
           else if (choice == 5){
               System.exit(0);
           }
