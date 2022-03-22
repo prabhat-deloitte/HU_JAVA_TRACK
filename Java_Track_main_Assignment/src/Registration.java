@@ -58,6 +58,7 @@ public class Registration {
         catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
         }
+        System.out.println("Registration successful");
         return "Registration successful";
     }
 

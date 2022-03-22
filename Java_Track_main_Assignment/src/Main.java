@@ -115,7 +115,14 @@ public class Main{
          if (choice == 2) {
             Registration registration = new Registration();
             try {
-                System.out.println(Registration.register());
+
+                if (Registration.register().equals("Registration successful")){
+                    main_menu me = new main_menu();
+                    me.menu();
+                }
+                else{
+                    System.out.println("Registration_Unsucessfull");
+                }
             }
             catch(Exception e){
                 System.out.println(e);
