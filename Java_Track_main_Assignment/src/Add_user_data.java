@@ -42,6 +42,8 @@ public class Add_user_data {
               sb.append('\n');
               bufferedWriter.write(sb.toString());
               bufferedWriter.close();
+              main_menu me = new main_menu();
+              me.menu();
          }
          catch(Exception e){
               System.out.println(e);
