@@ -1,3 +1,4 @@
+package Java_Track_main_Assignment.src;
 import java.util.Scanner;
 
 public class main_menu {
@@ -13,9 +14,12 @@ public class main_menu {
           if (choice == 1){
               Add_user_data add_user_data = new Add_user_data();
               add_user_data.add_user_data();}
-          if( choice == 2){
+          else if( choice == 2){
               List_user_data list_user_data = new List_user_data();
               list_user_data.list_user();}
+          else if (choice == 5){
+              System.exit(0);
+          }
           else{
               System.out.println("enter correct Input");
               menu();

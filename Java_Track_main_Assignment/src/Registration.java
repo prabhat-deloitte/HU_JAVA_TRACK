@@ -1,3 +1,4 @@
+package Java_Track_main_Assignment.src;
 import java.io.*;
 import java.util.Scanner;
 
@@ -30,7 +31,7 @@ public class Registration {
                     if (Password.validatePassword(pswrd).equals("Valid password")){
                         password = pswrd;
                         if (re_enter_pass.equals(password)) {
-                            FileWriter fileWriter = new FileWriter("C:\\Users\\praparihar\\IdeaProjects\\Assignment 5\\HU_JAVA_TRACK\\Java_Track_main_Assignment\\src\\Book1.csv", true);
+                            FileWriter fileWriter = new FileWriter("C:\\Users\\praparihar\\IdeaProjects\\MIn_assignment\\HU_JAVA_TRACK\\Java_Track_main_Assignment\\src\\Book1.csv", true);
                             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
                             StringBuilder sb = new StringBuilder();
                             sb.append(username);
