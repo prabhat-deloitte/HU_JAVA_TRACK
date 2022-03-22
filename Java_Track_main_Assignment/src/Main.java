@@ -46,18 +46,23 @@ public class Main{
         System.out.println("1.Login \n 2.registration");
         Scanner scn = new Scanner(System.in);
        int choice = scn.nextInt();
-
+          if (choice ==1){
+              Login log = new Login();
+              if (log.login().equals("login Sucesfull")){
+                  main_menu me = new main_menu();
+                  me.menu();
+              }
+          }
          if (choice == 2) {
             Registration registration = new Registration();
             try {
-                Registration.register();
+                System.out.println(Registration.register());
             }
             catch(Exception e){
                 System.out.println(e);
             }
         }
-        //Login log = new Login();
-        //System.out.println(log.check_user("RIYA SINGH"));
+
 
     }
 }
